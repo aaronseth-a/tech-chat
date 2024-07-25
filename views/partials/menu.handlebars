@@ -1,0 +1,12 @@
+<section>
+    <a href="/"><h1>TECH BLOG</h1></a>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        {{#if logged_in}}
+        <li><a href="/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/login">Login</a></li>
+        {{/if}}
+    </ul> 
+</section>

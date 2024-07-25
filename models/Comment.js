@@ -22,6 +22,13 @@ Comment.init(
                 key: 'id'
             }
         },
+        post_id:{
+            type: DataTypes.INTEGER,
+            references:{
+                model: 'post',
+                key: 'id'
+            }
+        },
         date:{
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
@@ -36,4 +43,4 @@ Comment.init(
     }
 );
 
-module.export = Comment;
+module.exports = Comment;
